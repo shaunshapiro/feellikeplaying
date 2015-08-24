@@ -1,9 +1,43 @@
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+
+<script>
+	$(function() {
+
+		var h2Element = $('h2');
+		var randomGame = Math.floor((Math.random() * 50000) + 1);
+		var gameId = "3030-" + randomGame;
+		var giantbomb_api_key = Figaro.env.giantbomb_key;
+
+	    $.ajax({
+		        url: "http://www.giantbomb.com/api/game/" + gameId + "/",
+		        type: "get",
+		        data: {  api_key: giantbomb_api_key, format: "json", field_list: "name" },
+		        success: gamer   
+		    });	
+
+
+		function gamer(data) {
+			console.log(data);
+			console.log(randomGame);	
+			h2Element.html(data.results.name);
+		}
+	});
+
+</script>
+
+
+
+<br /> 
 <br />
 <br />
 <br />
-<br />
+
+
 
 
 <div class="booyah-box col-xs-4 col-xs-offset-4 text-center">
-	<h1>How about...<h1>
+	<h1>How about...</h1>
+	<h2>-</h2>
+
+
 </div>

@@ -36,6 +36,10 @@ gem 'bootstrap-sass', '~> 3.3.4'
 
 gem 'figaro'
 
+gem 'httparty'
+
+gem 'paloma'
+
 # Use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.1.2'
 
