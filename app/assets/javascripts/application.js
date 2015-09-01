@@ -18,7 +18,3 @@
 //= require paloma
 
 
-// $(document).on('page:load', function(){
-//    Paloma.executeHook();
-//    Paloma.engine.start();
-// });

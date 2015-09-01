@@ -42,6 +42,8 @@ gem 'paloma'
 
 gem 'gon'
 
+gem 'rack-cors', :require => 'rack/cors'
+
 # Use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.1.2'
 
