@@ -1,18 +1,26 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
 
 <script>
-	$(function() {
+	
+
+
+ $(function() {
+
+
 
 		var h2Element = $('h2');
 		var randomGame = Math.floor((Math.random() * 50000) + 1);
 		var gameId = "3030-" + randomGame;
-		var giantbomb_api_key = Figaro.env.giantbomb_key;
+		
 
 	    $.ajax({
+	    		
 		        url: "http://www.giantbomb.com/api/game/" + gameId + "/",
 		        type: "get",
-		        data: {  api_key: giantbomb_api_key, format: "json", field_list: "name" },
+		        data: {  api_key: gon.giantbomb, format: "json", field_list: "name" },
 		        success: gamer   
+
+
 		    });	
 
 

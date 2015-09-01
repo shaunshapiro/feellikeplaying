@@ -16,3 +16,9 @@
 //= require turbolinks
 //= require_tree .
 //= require paloma
+
+
+// $(document).on('page:load', function(){
+//    Paloma.executeHook();
+//    Paloma.engine.start();
+// });

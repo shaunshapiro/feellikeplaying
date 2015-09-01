@@ -40,6 +40,8 @@ gem 'httparty'
 
 gem 'paloma'
 
+gem 'gon'
+
 # Use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.1.2'
 
