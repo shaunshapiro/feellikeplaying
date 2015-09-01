@@ -8,8 +8,10 @@
 		
 	    $.ajax({    		
 		        url: "https://www.giantbomb.com/api/game/" + gameId + "/",
+		        dataType: "jsonp",
+		        jsonp: 'json_callback',
 		        type: "get",
-		        data: {  api_key: gon.giantbomb, format: "json", field_list: "name" },
+		        data: {  api_key: gon.giantbomb, format: "jsonp", field_list: "name" },
 		        success: gamer   
 		    });	
 
