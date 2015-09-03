@@ -1,43 +1,30 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
 
 <script>
- $(function() {
-		var h2Element = $('h2');
-		var randomGame = Math.floor((Math.random() * 50000) + 1);
-		var gameId = "3030-" + randomGame;
-		
-	    $.ajax({    		
-		        url: "https://www.giantbomb.com/api/game/" + gameId + "/",
-		        dataType: "jsonp",
-		        jsonp: 'json_callback',
-		        type: "get",
-		        data: {  api_key: gon.giantbomb, format: "jsonp", field_list: "name" },
-		        success: gamer   
-		    });	
-
-
-		function gamer(data) {
-			console.log(data);
-			console.log(randomGame);	
-			h2Element.html(data.results.name);
-		}
+	
+	$(function() {
+		getRandomGame();
 	});
 
 </script>
-
-
 
 <br /> 
 <br />
 <br />
 <br />
 
-
-
-
 <div class="booyah-box col-xs-4 col-xs-offset-4 text-center">
 	<h1>How about...</h1>
 	<h2>-</h2>
+	<form action="demo_form.asp">
+		<select name="cars">
+			<option value="volvo">Volvo XC90</option>
+			<option value="saab">Saab 95</option>
+			<option value="mercedes">Mercedes SLK</option>
+			<option value="audi">Audi TT</option>
+		</select>
+
+	</form>
 
 
 </div>
