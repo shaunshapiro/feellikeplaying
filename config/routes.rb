@@ -1,5 +1,7 @@
 Feellikeplaying::Application.routes.draw do
   root 'front_pages#index'
+  get 'about', :to => 'front_pages#about'
+  
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
