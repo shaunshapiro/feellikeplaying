@@ -13,9 +13,10 @@ window.getRandomGame = function() {
 	});	
 
 	function gamer(data) {
-		console.log(data);
-		console.log(randomGame);	
-		h2Element.html(data.results.name);
+		var gameName = data.results.name;
+		var gameUrl = data.results.site_detail_url
+		var resultStr = '<a href="' + gameUrl + '">' + gameName + '</a>';	
+		h2Element.html(resultStr);
 	}
 	return h2Element;
 };
